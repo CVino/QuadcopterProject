@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ ! -e Out.txt ]; then
+    touch 00_Analytics/Out.txt
+fi
+
+truncate -s 0 Out.txt
+
+sudo ./05_Output/Quadcopter > 00_Analytics/Out.txt
