@@ -1,0 +1,3 @@
+#!/bin/bash
+
+g++ -std=c++14  -Wall -pthread -o 05_Output/Quadcopter -lpigpio -lrt -I00_Main_and_ProjectConfig/inc -I01_Motors/inc -I02_Ultrasound/inc -I03_OrientationSensor/inc -I04_Control/inc 00_Main_and_ProjectConfig/src/Quadcopter.cpp 01_Motors/src/libMotor.cpp 02_Ultrasound/src/libUS.cpp 03_OrientationSensor/src/RPi_BNO055.cpp 04_Control/src/QuadControl.cpp
